@@ -9,12 +9,13 @@ jpa:
           auto: update
 
 
-dataSource:
-  dbCreate: create-update
-  pooled: true
-  jmxExport: true
-  driverClassName: com.mysql.jdbc.Driver
-  username: root
-  password: ''
-  dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-  url: jdbc:mysql://localhost:3306/micronaut
+datasources:
+  default:
+    dbCreate: update
+    pooled: true
+    jmxExport: true
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: ''
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    url: jdbc:mysql://localhost:3306/micronaut

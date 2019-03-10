@@ -37,6 +37,7 @@ dependencies {
     compile "io.micronaut.configuration:micronaut-hibernate-validator"
     compileOnly "io.micronaut:micronaut-inject-java"
     runtime "ch.qos.logback:logback-classic:1.2.3"
+    runtime 'mysql:mysql-connector-java:5.1.47'
     testCompile "junit:junit:4.12"
     testCompile "io.micronaut:micronaut-inject-java"
     testCompile "org.hamcrest:hamcrest-all:1.3"
